@@ -1,0 +1,76 @@
+﻿#header{
+   background-color:#192536;
+   color:white;
+}
+h1{
+    padding-top:15px;
+    text-align:center;
+}
+#search .btn{
+    float:right;
+    padding:20px;
+ 
+}
+#input_search{
+    float:right;
+    padding-right:20px;
+
+}
+.nav-color{
+    background-color:orange;
+}
+#moreInfo{
+    background-color:grey;
+    width:100%;
+}
+.job_icon{
+   height:170%;
+   width:auto;
+}
+
+.img_arrow{
+    height:30%;
+    width:auto;
+}
+.pad{
+    padding-top:50px;
+    padding-bottom:20px;
+    margin-bottom:100px;
+}
+#foot{
+    padding-top:30px;
+    padding-bottom:40px;
+    color:#999;
+    text-align: center;
+}
+.more-pad{
+    margin-top:30px;
+}
+.inputbox {
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    text-align: center;
+}
+#chatroom_login{
+    height:300px;
+    margin-left:300px;
+    width:auto;
+    margin-right:240px;
+    
+}
+.leaf{
+   
+  border-radius: 40px 40px 40px 40px;
+
+
+}

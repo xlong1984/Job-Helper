@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<WebSurvey redirecturl="Websurvey.aspx" allowrepeats="false" cookiename="WS:Survey1">
+  <Group id="grp_Intro" nextimage="~/Images/next.png">
+    <Separator>
+      <p>
+        <b>WebSurvey Introduction</b>
+      </p>
+      <p>
+        Thank you for taking the time to read my article on 4GuysFromRolla.Com.  The survey you are
+        viewing was created for demo purposes.  Hopefully, it will give you an idea of how flexible
+        the WebSurvey control is.
+      </p>
+      <p>
+        As you can see, this page contains no questions, it serves as nothing more than an Intro
+        or "filler" page.  You can place anything you want in this section, including HTML (as long
+        as it is well-formed with regards to XML.
+      </p>
+      <p>Ok, enough intro.  To get started with the survey, simply click the Next button.</p>
+    </Separator>
+  </Group>
+  <Group id = "grp_PersonalInfo"  backimage="~/Images/back.png" nextimage="~/Images/next.png">
+    <Separator>
+      <b>Page 1 of 5: Personality </b>
+    </Separator>
+    <Question id="P1"  type="mcss" cols="30" required="true">
+      <Statement>
+        <b>You are almost never late for your appointments:</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">Yes</Response>
+        <Response id="A2">No</Response>
+      </Responses>
+    </Question>
+    <Question id="P2" type="mcss" cols="30" required="true">
+      <Statement>
+        <b>You like to be engaged in an active and fast-paced job:</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">Yes</Response>
+        <Response id="A2">No</Response>
+      </Responses>
+    </Question>
+    <Question id="P3" type="mcss" cols="30" required="true">
+      <Statement>
+        <b>You like to work alone rather than in a group:</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">Yes</Response>
+        <Response id="A2">No</Response>
+      </Responses>
+    </Question>
+  </Group>
+
+  <Group id = "grp_Personality"  backimage="~/Images/back.png" nextimage="~/Images/next.png">
+    <Separator>
+      <b>Page 2 of 5: Pesonality</b>
+    </Separator>
+    <Question id="P4" type="mcss" layout="vertical" required="true">
+      <Statement>
+        <b>You are always looking for opportunities:</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">Yes</Response>
+        <Response id="A2">No</Response>
+      </Responses>
+    </Question>
+    <Question id="P5" type="mcss" required="false">
+      <Statement>
+        <b>You always start your work just before deadline:</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">Yes</Response>
+        <Response id="A2">No</Response>
+      </Responses>
+    </Question>
+    <Question id="P6" type="essay" cols="30" rows="4" required="false">
+      <Statement>
+        <b>Tell us about yourself:</b>
+      </Statement>
+    </Question>
+  </Group>
+
+  <Group id = "grp_Techskills1"  backimage="~/Images/back.png" nextimage="~/Images/next.png">
+    <Separator>
+      <b>Page 3 of 5: Your technique skills:</b>
+    </Separator>
+    <Question id="P7" type="mcss" layout="vertical" required="true">
+      <Statement>
+        <b>You’ve just been given a complex task to code. What are you most likely to do?</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">Get straight into the task by putting in the initial code and prototyping the task.</Response>
+        <Response id="A2">Get everyone’s feedback on the problem, discuss all the possible options, then decide the best way to approach the problem given the current situation.</Response>
+      </Responses>
+    </Question>
+    <Question id="P8" type="mcss" layout="vertical" required="true">
+      <Statement>
+        <b>Who is a ‘better’ programmer?</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">Someone who went to university/college and has at least a masters in their field. They should read as many books on a subject as they can find before starting on it.</Response>
+        <Response id="A2">Someone who has been coding since they were 5 and simply goes by raw talent alone.</Response>
+      </Responses>
+    </Question>
+    <Question id="P9" type="mcss" layout="vertical" required="true">
+      <Statement>
+        <b>The ‘perfect’ language will:</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">Allow anybody in the world to program.</Response>
+        <Response id="A2">Allow me to make the best use of systems resources.</Response>
+      </Responses>
+    </Question>
+  </Group>
+
+  <Group id = "grp_Techskills2" backimage="~/Images/back.png" nextimage="~/Images/next.png">
+    <Separator>
+      <b>Page 4 of 5: Your technique skills:</b>
+    </Separator>
+    <Question id="P10" type="mcss" layout="vertical" required="true">
+      <Statement>
+        <b>Approximately what % of a project should be spent in planning?</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">~25% – The best way to complete a task is to plan as you go.</Response>
+        <Response id="A2">~75% – The more planning, the less code you need to write. By the time you code, you should simply be filling in stubs.</Response>
+        <Response id="A3">It depends on what project I'm doing.</Response>
+      </Responses>
+    </Question>
+    <Question id="P11" type="mcms" layout="vertical" required="true">
+      <Statement>
+        <b>Working expirence with coding:</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">Web design</Response>
+        <Response id="A2">Hardware coding</Response>
+        <Response id="A3">Software coding</Response>
+      </Responses>
+    </Question>
+    <Question id="P12" type="mcms" layout="vertical" required="true">
+      <Statement>
+        <b>Computer language:</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">C++</Response>
+        <Response id="A2">JAVA</Response>
+        <Response id="A3">C#</Response>
+        <Response id="A4">C</Response>
+        <Response id="A5">HTML</Response>
+      </Responses>
+    </Question>
+  </Group>
+
+  <Group id = "grp_Workkills1"  class="img_arrow" backimage="~/Images/back.png" nextimage="~/Images/finish.png">
+    <Separator>
+      <b>Page 5 of 5: Your career personality:</b>
+    </Separator>
+    <Question id="P13" type="mcss" layout="vertical" required="true">
+      <Statement>
+        <b>Which of these nouns best suits your personality?</b>
+      </Statement>
+      <Responses>
+        <Response id="A1">Practicality </Response>
+        <Response id="A2"> Diversity </Response>
+        <Response id="A3">Analysis </Response>
+        <Response id="A4"> Harmony </Response>
+      </Responses>
+    </Question>
+    <Question id="P14" type="mcms" layout="vertical" required="true">
+      <Statement>
+        <b>Which of these are you least comfortable tackling in your career?</b>
+      </Statement>
+      <Responses>
+        <Response id="A1"> Unstructured work and vague suggestions </Response>
+        <Response id="A2"> Repetitive tasks </Response>
+        <Response id="A3">Clearly defined work </Response>
+        <Response id="A4"> Having to work in isolation  </Response>
+      </Responses>
+    </Question>
+    <Question id="P15" type="essay" layout="vertical" required="true">
+      <Statement>
+        <b>Tell us about your career plan of next 10 years:</b>
+      </Statement>
+    </Question>
+  </Group>
+
+</WebSurvey>

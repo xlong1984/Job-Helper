@@ -1,0 +1,219 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="homepage.aspx.cs" Inherits="homepage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Welcome to Job Helper</title>
+       <link rel="stylesheet" href="/Styles/styles.css" />
+       
+     <style>
+        body{
+            background-color:#222;
+        }
+         div{
+             display:block;
+         }
+         .nav_bar {
+             background-color: #222;
+             height: 50px;
+             top:0;
+         }
+         .nav_bar_fixed {
+             position: fixed;
+             right: 0;
+             left: 0;
+         }
+         .navbar_container {
+             width: 1170px;
+             padding-right: 15px;
+             padding-left: 15px;
+             margin-top: auto;
+             margin-right: auto;
+         }
+         .navbar_logo {
+             float: left;
+             height: 100%;
+             margin-left: 30px;
+             color: #999;
+             font-family: Helvetica;
+             font-size: 16px;
+             padding-bottom:10px;
+         }
+        
+         .job_icon {
+             height: 80%;
+             width: auto;
+             margin-bottom:0;
+         }
+         a {
+             text-decoration: none;
+             color: #999;
+             font-family: Helvetica;
+             font-size: 14px;
+         }
+         ul {
+             display: block;
+         }
+         li {
+             float: left;
+             position: relative;
+             display: block;
+             text-decoration: none;
+             padding-left: 15px;
+             padding-right: 15px;
+             padding-top: 18px;
+             color: grey;
+         }
+         ul li a:hover, ul li a:focus {
+             color: white;
+         }
+         .nav_items {
+             float: left;
+             margin: 0;
+             list-style: none;
+         }
+         .middle{
+             background-image:url('/Images/4.jpg');
+             height:650px;
+             width:auto;
+             margin-left:-10px;
+             margin-right:-10px;
+         }
+         #company_entrance{
+             padding-top:380px;
+             padding-left:250px;
+             padding-right:230px;
+             color: white;
+             font-family: Helvetica;
+             font-size: 19px;
+         }
+         h1 {
+             text-decoration: none;
+             color: white;
+             font-family: Helvetica;
+             font-size:33px;
+         }
+         #entrance_button {
+             display: inline-block;
+             padding: 6px 12px;
+             margin-bottom: 0;
+             font-size: 14px;
+             text-align: center;
+             vertical-align: middle;
+             cursor: pointer;
+             border-radius: 4px;
+             color: #fff;
+             background-color: #428bca;
+             margin-left:350px;
+         }
+         #moreInfo {
+             width: 100%;
+             background-color: #222;
+             margin-right: 0px;
+             margin-left: -15px;
+             display: table;
+         }
+
+         .center_container {
+             margin-left: 25%;
+             width: 700px;
+             background-color: #222;
+             color: #999;
+             display: block;
+             padding-top: 80px;
+         }
+         .center_text {
+             float:left;
+             width:25%;
+             position: relative;
+             min-height: 1px;
+             padding-right: 15px;
+             padding-left: 15px;
+             padding-bottom:50px;
+         }
+         #end {
+             width: 110%;
+             background-color: black;
+             margin-right: -15px;
+             margin-left: -15px;
+             display: table;
+         }
+         #foot{
+              background-color: black;
+         }
+     </style>
+     
+</head>
+
+  <body>
+      <form id="form1" runat="server">
+         <div>
+           <!--Navbar start-->
+        <div class="nav_bar nav_bar_fixed">
+           <div class="navbar_logo">
+               <span><a href="/homepage.aspx"><img class="job_icon" src="Images/download 2.png" /></a></span>Job Helper
+            </div>
+            <div class="navbar_group">
+              <ul class="nav_items">
+               <li><a href="/Company/Company_Applications.aspx">Home</a></li>
+                <li><a href="/Company/Company_Profile.aspx">Profile</a></li>
+                <li><a href="/Company/Company_Applications.aspx">Application</a></li>
+                <li> <a href="/Company/Company_position.aspx">Positions </a></li>
+                <li><a href="/Company/Company_questionnaire.aspx">Questionnaires</a></li>
+                <li><a href="/Company/Contact.aspx">Contact</a></li>
+                <li><a href="/Company/CompanyChatroom_login.aspx">Let's Chat</a></li>
+                <li><a href="/Applicant/Applicant_Home.aspx">Sign In As Job Seeker</a></li>
+               </ul>
+        
+            </div>
+
+          </div>
+       <!--Navbar end-->
+
+  <div class="middle">
+    <div id="company_entrance">
+          <h1>Hiring the Right One! </h1>
+          <p>Design personal questionnares will help the company find the perfect candidate for each job position.</p>
+          <a href="Company/EmployerLogin.aspx" id="entrance_button">Sign up As Company</a>
+    </div>
+  </div>
+
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div id="moreInfo">
+      <div class="center_container">
+        <div class="center_text">
+         <a href="http://www.twitter.com"><img src="Images/twitter.png"  height="53px" /></a>
+            <h2  style="text-align: left">Twitter</h2>
+            <p  style="text-align: left">Connect with us on twitter.We post new positions about everyday.</p> 
+        </div>
+        <div class="center_text">
+         <a href="http://www.facebook.com"><img src="Images/facebook.png" height="53px" /></a>     
+             <h2 style="text-align: left">Facebook</h2>
+            <p style="text-align: left">Connect with us on facebook.We post new positions about everyday.</p>
+        </div>
+        <div class="center_text">
+            <a href="https://mail.google.com/"><img src="Images/mail.png"  height="53px" /></a>
+             <h2  style="text-align: left">Email</h2>
+            <p style="text-align: left">Contact with us through email.Tell us what is your suggestions and thoughts.</p> 
+        </div>
+         </div>
+        </div>
+     
+         <footer id="end">
+          <div class="center_container" id="foot">
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="40px" ImageAlign="Middle" ImageUrl="~/Images/BU Logo.png" OnClick="ImageButton1_Click" Width="80px" />
+               &nbsp;@lisence since 2014,designed for Boston University EC512 Project
+          </div>
+         </footer> 
+       </div>
+    
+      </form>
+      </body>
+    
+</html>

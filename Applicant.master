@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Applicant.master.cs" Inherits="aspx_Applicant" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Job Helper" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Job Helper</title>
+
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/bootstrap.css" />
+    <style type="text/css">
+       
+         .contpage {
+            clear:both;
+	        width: 100%;
+	        position:relative;
+	        height:500px;
+        }
+        
+         .footer {
+            position: absolute;
+            height: 5em;
+            margin-bottom: -5em;
+            background-repeat: no-repeat;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            color: #FFFFFF;
+            left: 5px;
+            right: -5px;
+            width: 100%;
+            background-color: #808080;
+            text-align: center;
+        }
+        #footer {
+            text-align: center;
+        }
+    </style>
+</head> 
+<body>
+    <form id="form1" runat="server">
+   <header id="header" class="row">
+       <div class="col-md-12">
+           <div style="text-align:center">
+           <h2>
+               <a href="/homepage.aspx"><span><asp:Image ID="homeimg" runat="server" Height="40px" Width="40px" ImageAlign="Middle" ImageUrl="~/Images/jobicon.png" /></span>Job Helper</a>
+           </h2>
+           </div>
+
+           <div class="btn-group btn-group-justified">
+               <div class="btn-group">
+                   <asp:LinkButton ID="HomeBtn" CssClass="btn btn-default" runat="server" OnClick="HomeBtn_Click">Home</asp:LinkButton>
+               </div>
+               <div class="btn-group">
+                   <asp:LinkButton ID="ProfileBtn" CssClass="btn btn-default" runat="server" OnClick="ProfileBtn_Click">Profile</asp:LinkButton>
+               </div>
+               <div class="btn-group">
+                   <asp:LinkButton ID="ApplicationBtn" CssClass="btn btn-default" runat="server" OnClick="ApplicationBtn_Click">Application</asp:LinkButton>
+               </div>
+               <div class="btn-group">
+                   <asp:LinkButton ID="JCBtn" CssClass="btn btn-default" runat="server" OnClick="JCBtn_Click">Jobs/Companies</asp:LinkButton>
+               </div>
+        
+               <div class="btn-group">
+                   <asp:LinkButton ID="SuggestionBtn" CssClass="btn btn-default" runat="server" OnClick="SuggestionBtn_Click">Suggestion</asp:LinkButton>
+               </div>
+               <div class="btn-group">
+                   <asp:LinkButton ID="ChatBtn" CssClass="btn btn-default" runat="server" OnClick="ChatBtn_Click">Chat Room</asp:LinkButton>
+               </div>
+           </div>
+         </div>
+       </header>
+        <hr />
+
+        <asp:Panel ID="ContentPanel" runat="server"  ScrollBars="Vertical" CssClass="contpage">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+ <hr />
+      <footer class="row" style="background-color: #000000">
+          <div class="col-lg-6 col-lg-offset-3" id="foot" >
+         
+              <p><asp:ImageButton ID="ImgBtn1" runat="server" Height="40px" ImageAlign="Middle" ImageUrl="~/Images/BU Logo.png" Width="80px" OnClick="ImgBtn1_Click" />&nbsp;@lisence since 2014,designed for Boston University EC512 Project</p>
+    
+          </div>
+         </footer> 
+    </form>
+
+</body>
+    
+
+</html>
+
